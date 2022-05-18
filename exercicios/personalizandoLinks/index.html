@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando Links</title>
+    <style>
+       
+       /*
+            # = id
+            . = classes
+            : = pseudo Classe
+            :: = Pseudo elemento
+            > = filho 
+       */
+       
+       body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited /*Se já tiver sido visitado*/{
+            color: darkred;
+        }
+
+        a:hover/*Se o mouse tiver em cima*/{
+            color: blue;
+        }
+
+        a:active /*quando clicar*/{
+            color: rgb(0, 0, 94);
+        }
+        a::after /*(elemento) after = depois do link*/{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a target="_blank" href="https://www.instagram.com/lucass.kauan/">Instagram</a ></li>
+        <li><a target="_blank" href="https://www.youtube.com/channel/UCpfuSdV5kC8vkvb_NVke2">Youtube</a></li>
+        <li><a target="_blank" href="https://www.google.com.br/">Google</a></li>
+    </ul>
+</body>
+</html>

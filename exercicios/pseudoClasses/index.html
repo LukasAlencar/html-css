@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoElementos</title>
+    <style>
+        div > p{
+            display: none;
+            background-color: blue;
+            color: white;
+            width: 100px;
+        }
+
+        
+        div:hover > p{
+            display: block;
+        }
+
+        div:hover{
+            color: red;
+        }
+
+        div{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pseudo-elementos</h1>
+    
+    <p>Passe o mouse na linha de baixo</p>
+    
+    <a href="#" >
+        <div>
+            passe o mouse aqui!
+            <p>texto escondido!</p>
+        </div>
+    </a>
+    <p>Fim do exemplo</p>
+</body>
+</html>

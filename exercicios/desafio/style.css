@@ -1,0 +1,5 @@
+img#img{
+    width: 250px;
+    border-radius: 100px;
+    filter: drop-shadow(1pt 1pt 2pt black);
+}
